@@ -1,7 +1,140 @@
 import styled from "styled-components";
 
 export const HomeWrapper = styled.div`
-  body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9cc9fe;
+  h1 {
+    color: #333333;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #snore-bubble {
+    animation-name: bubble-stretch;
+    transform-origin: bottom;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    animation-delay: 1.2;
+  }
+
+  @keyframes bubble-stretch {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(2);
+    }
+  }
+  #mouth {
+    animation-name: mouth-stretch;
+    transform-origin: center;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-box: fill-box;
+    animation-delay: 1.2;
+  }
+
+  @keyframes mouth-stretch {
+    0% {
+      transform: scale(1.1);
+    }
+
+    100% {
+      transform: scale(0.6);
+    }
+  }
+
+  #snore-bubble {
+    animation-name: stretch;
+    transform-origin: bottom;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    animation-delay: 2;
+  }
+
+  @keyframes stretch {
+    0% {
+      transform: scale(0.2);
+    }
+
+    100% {
+      transform: scale(2);
+    }
+  }
+
+  #body {
+    animation-name: body-stretch;
+    transform-origin: bottom;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    transform-box: fill-box;
+    animation-direction: alternate;
+    animation-delay: 2;
+  }
+
+  @keyframes body-stretch {
+    0% {
+      transform: scale(1.02);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  #right-hand {
+    animation-name: move-up;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.6s;
+    animation-delay: 2;
+  }
+
+  @keyframes move-up {
+    0% {
+      transform: translateY(-12px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  #left-foot,
+  #right-foot {
+    animation-name: wiggle;
+    transform-origin: bottom;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.6s;
+    animation-delay: 2.5;
+  }
+
+  @keyframes wiggle {
+    from {
+      transform: rotate(-1.5deg) translateY(-5px);
+    }
+    to {
+      transform: rotate(0deg) translateY(0px);
+    }
+  }
+
+  /* body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,5 +409,5 @@ export const HomeWrapper = styled.div`
     100% {
       top: -50px;
     }
-  }
+  } */
 `;

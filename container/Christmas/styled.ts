@@ -1,6 +1,16 @@
 import styled from "styled-components";
 
 export const ChristmasWrapper = styled.div`
+  margin: 0;
+  overflow: hidden;
+  background: #161616;
+  color: #ea80b0;
+  #overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
   label {
     display: inline-block;
     background-color: #161616;
