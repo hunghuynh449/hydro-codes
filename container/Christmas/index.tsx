@@ -34,16 +34,17 @@ const Christmas: React.FC = () => {
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/three@0.115.0/examples/js/postprocessing/UnrealBloomPass.js"
       ></script>
-        <div id="overlay">
-          <ul>
-            <li className="title">Sẵn sàng chưa</li>
-            <li>
-              <button className="btn" id="btnA" type="button">
-                Bắt đầu thoy
-              </button>
-            </li>
-          </ul>
-        </div>
+      <div id="overlay">
+        <ul>
+          <li className="title">Merry phát tài</li>
+          <li className="title">Cung hỉ Christmas</li>
+          <li>
+            <button className="btn" id="btnA" type="button">
+              Nhấn vào đâyyy
+            </button>
+          </li>
+        </ul>
+      </div>
       <script type="text/javascript" src="/index.js" async></script>
     </ChristmasWrapper>
   );
