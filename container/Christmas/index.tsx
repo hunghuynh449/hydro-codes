@@ -37,7 +37,7 @@ const Christmas: React.FC = () => {
       <div id="overlay">
         <ul>
           <li className="title">Merry phát tài</li>
-          <li className="title">Cung hỉ Christmas</li>
+          <li className="title">Cung hỷ Christmas</li>
           <li>
             <button className="btn" id="btnA" type="button">
               Nhấn vào đâyyy
