@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       <Header />
 
       <main>
-        <h1>Welcome to Hydro Codes</h1>
+        <h1>Do not have access permission</h1>
 
         {/* <div className="baymax">
           <div className="head">
