@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       ></script>
       <script>
         window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
+        {window.dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-87LJ87TDHV');
       </script>
     </Head>
